@@ -2,6 +2,7 @@
 <uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_ellhgKhWEeWnJ41Osjz3jA" name="HCM">
   <packagedElement xmi:type="uml:Package" xmi:id="_oNIKEKiDEeWnJ41Osjz3jA" name="Components">
     <packagedElement xmi:type="uml:Component" xmi:id="_AlD8EKh1EeWnJ41Osjz3jA" name="Employee Profile" useCase="_6xldMKhWEeWnJ41Osjz3jA _MT98kKhcEeWnJ41Osjz3jA"/>
+    <packagedElement xmi:type="uml:Component" xmi:id="_OelIoKjNEeWLasRuU3m_oQ" name="Organization" useCase="_Z5klQKjNEeWLasRuU3m_oQ _dlUeQKjNEeWLasRuU3m_oQ _8gij0KjOEeWLasRuU3m_oQ _B4_2QKjPEeWLasRuU3m_oQ _ZaWnwKjPEeWLasRuU3m_oQ _rIADUKjREeWLasRuU3m_oQ"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="__5UnsKiFEeWnJ41Osjz3jA" name="Behaviours">
     <packagedElement xmi:type="uml:Package" xmi:id="_DFKRkKiGEeWnJ41Osjz3jA" name="Usecases">
@@ -11,10 +12,23 @@
         </ownedComment>
       </packagedElement>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_MT98kKhcEeWnJ41Osjz3jA" name="Setup Identification Type" subject="_AlD8EKh1EeWnJ41Osjz3jA"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_Z5klQKjNEeWLasRuU3m_oQ" name="Setup Department" subject="_OelIoKjNEeWLasRuU3m_oQ"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_dlUeQKjNEeWLasRuU3m_oQ" name="Setup Job Type" subject="_OelIoKjNEeWLasRuU3m_oQ"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_8gij0KjOEeWLasRuU3m_oQ" name="Create Job" subject="_OelIoKjNEeWLasRuU3m_oQ"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_B4_2QKjPEeWLasRuU3m_oQ" name="Setup Job Function" subject="_OelIoKjNEeWLasRuU3m_oQ"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_ZaWnwKjPEeWLasRuU3m_oQ" name="Setup Job tasks" subject="_OelIoKjNEeWLasRuU3m_oQ"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_rIADUKjREeWLasRuU3m_oQ" name="Setup Areas of responsibility" subject="_OelIoKjNEeWLasRuU3m_oQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_Y21OIKiGEeWnJ41Osjz3jA" name="Actors"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_l9yuQKiPEeWnJ41Osjz3jA" name="IdentificationTypeEntity">
     <ownedAttribute xmi:id="_BMjloKiQEeWnJ41Osjz3jA" name="identification_id"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_kTTHQKjPEeWLasRuU3m_oQ" name="JobEntity">
+    <ownedAttribute xmi:id="_t1jgoKjPEeWLasRuU3m_oQ" name="jobName"/>
+    <ownedAttribute xmi:id="_3_iBUKjPEeWLasRuU3m_oQ" name="description"/>
+    <ownedAttribute xmi:id="_6VWCIKjPEeWLasRuU3m_oQ" name="title"/>
+    <ownedAttribute xmi:id="_7n9gkKjPEeWLasRuU3m_oQ" name="maximumPositions"/>
+    <ownedAttribute xmi:id="_MvBIIKjQEeWLasRuU3m_oQ" name="unlimitedPosition"/>
   </packagedElement>
 </uml:Model>
