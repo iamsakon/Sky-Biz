@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_ellhgKhWEeWnJ41Osjz3jA" name="HCM">
+  <packagedElement xmi:type="uml:Package" xmi:id="_oNIKEKiDEeWnJ41Osjz3jA" name="Components">
+    <packagedElement xmi:type="uml:Component" xmi:id="_AlD8EKh1EeWnJ41Osjz3jA" name="Employee Profile" useCase="_6xldMKhWEeWnJ41Osjz3jA _MT98kKhcEeWnJ41Osjz3jA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="__5UnsKiFEeWnJ41Osjz3jA" name="Behaviours">
+    <packagedElement xmi:type="uml:Package" xmi:id="_DFKRkKiGEeWnJ41Osjz3jA" name="Usecases">
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_6xldMKhWEeWnJ41Osjz3jA" name="Hiring Employee" subject="_AlD8EKh1EeWnJ41Osjz3jA">
+        <ownedComment xmi:id="_67NhAKhbEeWnJ41Osjz3jA" annotatedElement="_6xldMKhWEeWnJ41Osjz3jA">
+          <body>This use case is used when hr want to hiring new an employee.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_MT98kKhcEeWnJ41Osjz3jA" name="Setup Identification Type" subject="_AlD8EKh1EeWnJ41Osjz3jA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Y21OIKiGEeWnJ41Osjz3jA" name="Actors"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_l9yuQKiPEeWnJ41Osjz3jA" name="IdentificationTypeEntity">
+    <ownedAttribute xmi:id="_BMjloKiQEeWnJ41Osjz3jA" name="identification_id"/>
+  </packagedElement>
+</uml:Model>

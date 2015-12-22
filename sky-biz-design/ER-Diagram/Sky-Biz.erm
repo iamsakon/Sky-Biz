@@ -9,14 +9,14 @@
 		<bottom_margin>30</bottom_margin>
 		<right_margin>30</right_margin>
 	</page_setting>
-	<category_index>0</category_index>
+	<category_index>2</category_index>
 	<zoom>1.0</zoom>
 	<x>0</x>
 	<y>0</y>
 	<default_color>
 		<r>128</r>
 		<g>128</g>
-		<b>192</b>
+		<b>0</b>
 	</default_color>
 	<color>
 		<r>255</r>
@@ -112,9 +112,9 @@
 			<show_referred_tables>false</show_referred_tables>
 			<categories>
 				<category>
-					<id>2</id>
-					<height>433</height>
-					<width>1081</width>
+					<id>4</id>
+					<height>277</height>
+					<width>709</width>
 						<font_name>Segoe UI</font_name>
 						<font_size>9</font_size>
 					<x>12</x>
@@ -122,7 +122,7 @@
 					<color>
 						<r>128</r>
 						<g>128</g>
-						<b>192</b>
+						<b>0</b>
 					</color>
 					<connections>
 					</connections>
@@ -130,6 +130,26 @@
 					<selected>true</selected>
 					<node_element>0</node_element>
 					<node_element>1</node_element>
+				</category>
+				<category>
+					<id>5</id>
+					<height>91</height>
+					<width>753</width>
+						<font_name>Segoe UI</font_name>
+						<font_size>9</font_size>
+					<x>165</x>
+					<y>114</y>
+					<color>
+						<r>128</r>
+						<g>128</g>
+						<b>192</b>
+					</color>
+					<connections>
+					</connections>
+					<name>HCM</name>
+					<selected>true</selected>
+					<node_element>2</node_element>
+					<node_element>3</node_element>
 				</category>
 			</categories>
 		</category_settings>
@@ -155,7 +175,7 @@
 			</connections>
 			<display>false</display>
 			<creation_date>2015-12-16 23:14:53</creation_date>
-			<updated_date>2015-12-16 23:52:15</updated_date>
+			<updated_date>2015-12-22 09:47:38</updated_date>
 			<model_property>
 				<name>Project Name</name>
 				<value></value>
@@ -523,6 +543,68 @@
 					</sequence>
 				</normal_column>
 				<column_group>0</column_group>
+			</columns>
+			<indexes>
+			</indexes>
+			<complex_unique_key_list>
+			</complex_unique_key_list>
+			<table_properties>
+				<schema></schema>
+			</table_properties>
+		</table>
+		<table>
+			<id>2</id>
+			<height>75</height>
+			<width>120</width>
+				<font_name>Segoe UI</font_name>
+				<font_size>9</font_size>
+			<x>165</x>
+			<y>114</y>
+			<color>
+				<r>128</r>
+				<g>128</g>
+				<b>0</b>
+			</color>
+			<connections>
+			</connections>
+			<physical_name>new_table</physical_name>
+			<logical_name>new_table</logical_name>
+			<description></description>
+			<constraint></constraint>
+			<primary_key_name></primary_key_name>
+			<option></option>
+			<columns>
+			</columns>
+			<indexes>
+			</indexes>
+			<complex_unique_key_list>
+			</complex_unique_key_list>
+			<table_properties>
+				<schema></schema>
+			</table_properties>
+		</table>
+		<table>
+			<id>3</id>
+			<height>75</height>
+			<width>120</width>
+				<font_name>Segoe UI</font_name>
+				<font_size>9</font_size>
+			<x>430</x>
+			<y>130</y>
+			<color>
+				<r>128</r>
+				<g>128</g>
+				<b>0</b>
+			</color>
+			<connections>
+			</connections>
+			<physical_name>new_table</physical_name>
+			<logical_name>new_table</logical_name>
+			<description></description>
+			<constraint></constraint>
+			<primary_key_name></primary_key_name>
+			<option></option>
+			<columns>
 			</columns>
 			<indexes>
 			</indexes>
