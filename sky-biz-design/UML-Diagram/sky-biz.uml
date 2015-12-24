@@ -1,34 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_ellhgKhWEeWnJ41Osjz3jA" name="HCM">
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_ellhgKhWEeWnJ41Osjz3jA" name="Human Capital Management">
   <packagedElement xmi:type="uml:Package" xmi:id="_oNIKEKiDEeWnJ41Osjz3jA" name="Components">
-    <packagedElement xmi:type="uml:Component" xmi:id="_AlD8EKh1EeWnJ41Osjz3jA" name="Employee Profile" useCase="_6xldMKhWEeWnJ41Osjz3jA _MT98kKhcEeWnJ41Osjz3jA"/>
-    <packagedElement xmi:type="uml:Component" xmi:id="_OelIoKjNEeWLasRuU3m_oQ" name="Organization" useCase="_Z5klQKjNEeWLasRuU3m_oQ _dlUeQKjNEeWLasRuU3m_oQ _8gij0KjOEeWLasRuU3m_oQ _B4_2QKjPEeWLasRuU3m_oQ _ZaWnwKjPEeWLasRuU3m_oQ _rIADUKjREeWLasRuU3m_oQ"/>
+    <packagedElement xmi:type="uml:Component" xmi:id="_AlD8EKh1EeWnJ41Osjz3jA" name="Employee Profile" useCase="_6xldMKhWEeWnJ41Osjz3jA _MT98kKhcEeWnJ41Osjz3jA">
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_l9yuQKiPEeWnJ41Osjz3jA" name="IdentificationTypeEntity">
+        <ownedAttribute xmi:id="_BMjloKiQEeWnJ41Osjz3jA" name="identification_id"/>
+      </nestedClassifier>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_OelIoKjNEeWLasRuU3m_oQ" name="Organization" useCase="_Z5klQKjNEeWLasRuU3m_oQ _dlUeQKjNEeWLasRuU3m_oQ _8gij0KjOEeWLasRuU3m_oQ _B4_2QKjPEeWLasRuU3m_oQ _ZaWnwKjPEeWLasRuU3m_oQ _rIADUKjREeWLasRuU3m_oQ">
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_kTTHQKjPEeWLasRuU3m_oQ" name="JobEntity">
+        <ownedAttribute xmi:id="_t1jgoKjPEeWLasRuU3m_oQ" name="jobName"/>
+        <ownedAttribute xmi:id="_3_iBUKjPEeWLasRuU3m_oQ" name="description"/>
+        <ownedAttribute xmi:id="_6VWCIKjPEeWLasRuU3m_oQ" name="title"/>
+        <ownedAttribute xmi:id="_7n9gkKjPEeWLasRuU3m_oQ" name="maximumPositions"/>
+        <ownedAttribute xmi:id="_MvBIIKjQEeWLasRuU3m_oQ" name="unlimitedPosition"/>
+      </nestedClassifier>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_R4nMwKoQEeWfLfaL-Lic9g" name="JobTypeEntity"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_Ts1jcKoQEeWfLfaL-Lic9g" name="JobFunctionEntity"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_VS_B4KoQEeWfLfaL-Lic9g" name="JobTaskEntity"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_ZoLggKoQEeWfLfaL-Lic9g" name="AreasEntity"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_at6HkKoSEeWfLfaL-Lic9g" name="DepartmentEntity"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_FGOHUKlrEeWfLfaL-Lic9g" name="Recruitment"/>
+    <packagedElement xmi:type="uml:Component" xmi:id="_oQYOEKoSEeWfLfaL-Lic9g" name="Completency">
+      <packagedElement xmi:type="uml:Package" xmi:id="_avWckKoTEeWfLfaL-Lic9g" name="com.sky.biz.hcm.completency">
+        <packagedElement xmi:type="uml:Class" xmi:id="_dufHMKoTEeWfLfaL-Lic9g" name="SkillTypeEntity"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_j4smsKoTEeWfLfaL-Lic9g" name="SkillsEntity"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_l52mIKoTEeWfLfaL-Lic9g" name="CertificateTypeEntity"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_o-1aEKoTEeWfLfaL-Lic9g" name="CertificateEntity"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_rkxhkKoTEeWfLfaL-Lic9g" name="CourseEntity"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_mMtaQKofEeWfLfaL-Lic9g" name="EducationDisciplineEntity"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_V0ra4KoqEeWfLfaL-Lic9g" name="EducationDisciplineGroupEntity"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_cl_9sKoqEeWfLfaL-Lic9g" name="InstituteEntity"/>
+      </packagedElement>
+    </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="__5UnsKiFEeWnJ41Osjz3jA" name="Behaviours">
     <packagedElement xmi:type="uml:Package" xmi:id="_DFKRkKiGEeWnJ41Osjz3jA" name="Usecases">
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_6xldMKhWEeWnJ41Osjz3jA" name="Hiring Employee" subject="_AlD8EKh1EeWnJ41Osjz3jA">
-        <ownedComment xmi:id="_67NhAKhbEeWnJ41Osjz3jA" annotatedElement="_6xldMKhWEeWnJ41Osjz3jA">
-          <body>This use case is used when hr want to hiring new an employee.</body>
-        </ownedComment>
+      <packagedElement xmi:type="uml:Package" xmi:id="_vXUx8KlqEeWfLfaL-Lic9g" name="employee profile">
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_6xldMKhWEeWnJ41Osjz3jA" name="Hiring Employee" subject="_AlD8EKh1EeWnJ41Osjz3jA">
+          <ownedComment xmi:id="_67NhAKhbEeWnJ41Osjz3jA" annotatedElement="_6xldMKhWEeWnJ41Osjz3jA">
+            <body>This use case is used when hr want to hiring new an employee.</body>
+          </ownedComment>
+        </packagedElement>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_MT98kKhcEeWnJ41Osjz3jA" name="Setup Identification Type" subject="_AlD8EKh1EeWnJ41Osjz3jA"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_MT98kKhcEeWnJ41Osjz3jA" name="Setup Identification Type" subject="_AlD8EKh1EeWnJ41Osjz3jA"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_Z5klQKjNEeWLasRuU3m_oQ" name="Setup Department" subject="_OelIoKjNEeWLasRuU3m_oQ"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_dlUeQKjNEeWLasRuU3m_oQ" name="Setup Job Type" subject="_OelIoKjNEeWLasRuU3m_oQ"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_8gij0KjOEeWLasRuU3m_oQ" name="Create Job" subject="_OelIoKjNEeWLasRuU3m_oQ"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_B4_2QKjPEeWLasRuU3m_oQ" name="Setup Job Function" subject="_OelIoKjNEeWLasRuU3m_oQ"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_ZaWnwKjPEeWLasRuU3m_oQ" name="Setup Job tasks" subject="_OelIoKjNEeWLasRuU3m_oQ"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_rIADUKjREeWLasRuU3m_oQ" name="Setup Areas of responsibility" subject="_OelIoKjNEeWLasRuU3m_oQ"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_6DwfcKlqEeWfLfaL-Lic9g" name="Organization Management">
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_Z5klQKjNEeWLasRuU3m_oQ" name="Setup Department" subject="_OelIoKjNEeWLasRuU3m_oQ"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_dlUeQKjNEeWLasRuU3m_oQ" name="Setup Job Type" subject="_OelIoKjNEeWLasRuU3m_oQ"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_8gij0KjOEeWLasRuU3m_oQ" name="Create Job" subject="_OelIoKjNEeWLasRuU3m_oQ"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_B4_2QKjPEeWLasRuU3m_oQ" name="Setup Job Function" subject="_OelIoKjNEeWLasRuU3m_oQ"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_ZaWnwKjPEeWLasRuU3m_oQ" name="Setup Job tasks" subject="_OelIoKjNEeWLasRuU3m_oQ"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_rIADUKjREeWLasRuU3m_oQ" name="Setup Areas of responsibility" subject="_OelIoKjNEeWLasRuU3m_oQ"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_Y21OIKiGEeWnJ41Osjz3jA" name="Actors"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_l9yuQKiPEeWnJ41Osjz3jA" name="IdentificationTypeEntity">
-    <ownedAttribute xmi:id="_BMjloKiQEeWnJ41Osjz3jA" name="identification_id"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_kTTHQKjPEeWLasRuU3m_oQ" name="JobEntity">
-    <ownedAttribute xmi:id="_t1jgoKjPEeWLasRuU3m_oQ" name="jobName"/>
-    <ownedAttribute xmi:id="_3_iBUKjPEeWLasRuU3m_oQ" name="description"/>
-    <ownedAttribute xmi:id="_6VWCIKjPEeWLasRuU3m_oQ" name="title"/>
-    <ownedAttribute xmi:id="_7n9gkKjPEeWLasRuU3m_oQ" name="maximumPositions"/>
-    <ownedAttribute xmi:id="_MvBIIKjQEeWLasRuU3m_oQ" name="unlimitedPosition"/>
+    <packagedElement xmi:type="uml:Interaction" xmi:id="_kILY8KlqEeWfLfaL-Lic9g" name="Interaction1"/>
+    <packagedElement xmi:type="uml:Interaction" xmi:id="_ligo8KlqEeWfLfaL-Lic9g" name="Interaction1"/>
   </packagedElement>
 </uml:Model>
