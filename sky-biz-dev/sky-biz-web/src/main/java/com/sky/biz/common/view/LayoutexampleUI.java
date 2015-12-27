@@ -2,6 +2,7 @@ package com.sky.biz.common.view;
 
 import javax.servlet.annotation.WebServlet;
 
+import com.sky.biz.hcm.om.view.OrgListViewImpl;
 import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.VaadinServletConfiguration;
 import com.vaadin.server.VaadinRequest;
@@ -43,7 +44,7 @@ public class LayoutexampleUI extends UI {
 		mainLayout2.setPrimaryStyleName("v-splitpanel-horizontal");
 		mainLayout2.setSplitPosition(15f);
 
-		HorizontalSplitPanel workingLayout = new HorizontalSplitPanel();
+		final HorizontalSplitPanel workingLayout = new HorizontalSplitPanel();
 		workingLayout.setPrimaryStyleName("v-splitpanel-horizontal");
 		workingLayout.setSplitPosition(80f);
 		;
@@ -52,6 +53,7 @@ public class LayoutexampleUI extends UI {
 		button.addClickListener(new Button.ClickListener() {
 			public void buttonClick(ClickEvent event) {
 				mainLayout.setFirstComponent(new Label("Thank you for clicking"));
+				workingLayout.setFirstComponent(new OrgListViewImpl().getOrgList());
 			}
 		});
 		mainLayout.setSecondComponent(mainLayout2);
