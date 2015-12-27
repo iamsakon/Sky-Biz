@@ -15,7 +15,7 @@ import com.sky.biz.common.entity.AbstractEntity;
 @Table(name = "hcm_om_legal_unit")
 @SequenceGenerator(name = "seq_hcm_om_legal_unit", sequenceName = "seq_hcm_om_legal_unit")
 @Entity
-public class LegalEntity extends AbstractEntity {
+public class LegalEntitiesEntity extends AbstractEntity {
 
 	@Id
 	@Column(name = "om_legal_unit_id")

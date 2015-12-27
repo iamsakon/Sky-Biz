@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_ellhgKhWEeWnJ41Osjz3jA" name="Human Capital Management">
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_ellhgKhWEeWnJ41Osjz3jA" name="Human Capital Management">
   <packagedElement xmi:type="uml:Package" xmi:id="_oNIKEKiDEeWnJ41Osjz3jA" name="Components">
     <packagedElement xmi:type="uml:Component" xmi:id="_AlD8EKh1EeWnJ41Osjz3jA" name="Employee Profile" useCase="_6xldMKhWEeWnJ41Osjz3jA _MT98kKhcEeWnJ41Osjz3jA">
       <nestedClassifier xmi:type="uml:Class" xmi:id="_l9yuQKiPEeWnJ41Osjz3jA" name="IdentificationTypeEntity">
@@ -18,7 +18,32 @@
       <nestedClassifier xmi:type="uml:Class" xmi:id="_Ts1jcKoQEeWfLfaL-Lic9g" name="JobFunctionEntity"/>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_VS_B4KoQEeWfLfaL-Lic9g" name="JobTaskEntity"/>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_ZoLggKoQEeWfLfaL-Lic9g" name="AreasEntity"/>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_at6HkKoSEeWfLfaL-Lic9g" name="DepartmentEntity"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_a4Vu0KvnEeWLasRuU3m_oQ" name="LegalEntitiesTypeEntity">
+        <ownedAttribute xmi:id="_qk010KvnEeWLasRuU3m_oQ" name="name" visibility="private"/>
+        <ownedAttribute xmi:id="_3Uat4KvnEeWLasRuU3m_oQ" name="pefixCaption" visibility="private"/>
+        <ownedAttribute xmi:id="_E2tOMKvoEeWLasRuU3m_oQ" name="postfixCaption" visibility="private"/>
+      </nestedClassifier>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_O4PkkKvoEeWLasRuU3m_oQ" name="LegalEntitiesEntity">
+        <ownedAttribute xmi:id="_cWgggKvoEeWLasRuU3m_oQ" name="name" visibility="private"/>
+        <ownedAttribute xmi:id="_r0IFEKvoEeWLasRuU3m_oQ" name="addressLine1" visibility="private"/>
+        <ownedAttribute xmi:id="_vAONoKvoEeWLasRuU3m_oQ" name="addressLine2" visibility="private"/>
+        <ownedAttribute xmi:id="_x2blwKvoEeWLasRuU3m_oQ" name="addressLine3" visibility="private"/>
+        <ownedAttribute xmi:id="_3jbk0KvoEeWLasRuU3m_oQ" name="contractInformation" visibility="private"/>
+        <ownedAttribute xmi:id="_97R3sKvoEeWLasRuU3m_oQ" name="taxRegistration" visibility="private"/>
+        <ownedAttribute xmi:id="_DH6UoKvpEeWLasRuU3m_oQ" name="withholdingTax" visibility="private"/>
+      </nestedClassifier>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_cJlpYKvpEeWLasRuU3m_oQ" name="OrgEntity">
+        <ownedAttribute xmi:id="_gebQwKvrEeWLasRuU3m_oQ" name="code" visibility="private"/>
+        <ownedAttribute xmi:id="_i5iBQKvrEeWLasRuU3m_oQ" name="memo" visibility="private"/>
+        <ownedAttribute xmi:id="_mmn-EKvrEeWLasRuU3m_oQ" name="addressLine1" visibility="private"/>
+        <ownedAttribute xmi:id="_qU0HEKvrEeWLasRuU3m_oQ" name="addressLine2" visibility="private"/>
+        <ownedAttribute xmi:id="_z0DosKvrEeWLasRuU3m_oQ" name="addressLine3" visibility="private"/>
+        <ownedAttribute xmi:id="_teU1sKvrEeWLasRuU3m_oQ" name="purpose" visibility="private"/>
+      </nestedClassifier>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_lEiyMKvpEeWLasRuU3m_oQ" name="OrgTypeEntity">
+        <ownedAttribute xmi:id="_pXHaoKvpEeWLasRuU3m_oQ" name="code" visibility="private"/>
+        <ownedAttribute xmi:id="_srTvQKvpEeWLasRuU3m_oQ" name="name" visibility="private"/>
+      </nestedClassifier>
     </packagedElement>
     <packagedElement xmi:type="uml:Component" xmi:id="_FGOHUKlrEeWfLfaL-Lic9g" name="Recruitment"/>
     <packagedElement xmi:type="uml:Component" xmi:id="_oQYOEKoSEeWfLfaL-Lic9g" name="Completency">
@@ -32,6 +57,29 @@
         <packagedElement xmi:type="uml:Class" xmi:id="_V0ra4KoqEeWfLfaL-Lic9g" name="EducationDisciplineGroupEntity"/>
         <packagedElement xmi:type="uml:Class" xmi:id="_cl_9sKoqEeWfLfaL-Lic9g" name="InstituteEntity"/>
       </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_drfSoKw5EeWLasRuU3m_oQ" memberEnd="_drfSoaw5EeWLasRuU3m_oQ _drhH0aw5EeWLasRuU3m_oQ">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_drfSoaw5EeWLasRuU3m_oQ" name="orgEntitys" type="_cJlpYKvpEeWLasRuU3m_oQ" association="_drfSoKw5EeWLasRuU3m_oQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_drggwKw5EeWLasRuU3m_oQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_drhH0Kw5EeWLasRuU3m_oQ" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_drhH0aw5EeWLasRuU3m_oQ" name="orgTypeEntitys" type="_lEiyMKvpEeWLasRuU3m_oQ" association="_drfSoKw5EeWLasRuU3m_oQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_drhu4Kw5EeWLasRuU3m_oQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_drhu4aw5EeWLasRuU3m_oQ" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_DPth8Kw6EeWLasRuU3m_oQ" memberEnd="_DPuJAKw6EeWLasRuU3m_oQ _DPxMUKw6EeWLasRuU3m_oQ" navigableOwnedEnd="_DPxMUKw6EeWLasRuU3m_oQ">
+      <name xsi:nil="true"/>
+      <ownedEnd xmi:id="_DPuJAKw6EeWLasRuU3m_oQ" type="_a4Vu0KvnEeWLasRuU3m_oQ" association="_DPth8Kw6EeWLasRuU3m_oQ">
+        <name xsi:nil="true"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DPwlQKw6EeWLasRuU3m_oQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DPwlQaw6EeWLasRuU3m_oQ" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_DPxMUKw6EeWLasRuU3m_oQ" name="legalEntitiesEntitys" type="_O4PkkKvoEeWLasRuU3m_oQ" association="_DPth8Kw6EeWLasRuU3m_oQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DPzBgKw6EeWLasRuU3m_oQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DPzBgaw6EeWLasRuU3m_oQ" value="*"/>
+      </ownedEnd>
     </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="__5UnsKiFEeWnJ41Osjz3jA" name="Behaviours">
