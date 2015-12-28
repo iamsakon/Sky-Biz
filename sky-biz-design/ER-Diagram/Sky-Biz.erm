@@ -9,7 +9,7 @@
 		<bottom_margin>30</bottom_margin>
 		<right_margin>30</right_margin>
 	</page_setting>
-	<category_index>2</category_index>
+	<category_index>0</category_index>
 	<zoom>1.0</zoom>
 	<x>0</x>
 	<y>0</y>
@@ -133,12 +133,12 @@
 				</category>
 				<category>
 					<id>5</id>
-					<height>91</height>
-					<width>753</width>
+					<height>145</height>
+					<width>1120</width>
 						<font_name>Segoe UI</font_name>
 						<font_size>9</font_size>
-					<x>165</x>
-					<y>114</y>
+					<x>1104</x>
+					<y>12</y>
 					<color>
 						<r>128</r>
 						<g>128</g>
@@ -175,7 +175,7 @@
 			</connections>
 			<display>false</display>
 			<creation_date>2015-12-16 23:14:53</creation_date>
-			<updated_date>2015-12-22 09:47:38</updated_date>
+			<updated_date>2015-12-25 14:54:36</updated_date>
 			<model_property>
 				<name>Project Name</name>
 				<value></value>
@@ -558,8 +558,8 @@
 			<width>120</width>
 				<font_name>Segoe UI</font_name>
 				<font_size>9</font_size>
-			<x>165</x>
-			<y>114</y>
+			<x>1407</x>
+			<y>60</y>
 			<color>
 				<r>128</r>
 				<g>128</g>
@@ -589,8 +589,8 @@
 			<width>120</width>
 				<font_name>Segoe UI</font_name>
 				<font_size>9</font_size>
-			<x>430</x>
-			<y>130</y>
+			<x>1584</x>
+			<y>60</y>
 			<color>
 				<r>128</r>
 				<g>128</g>
