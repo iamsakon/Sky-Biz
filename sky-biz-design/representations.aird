@@ -781,7 +781,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Class%20Diagram']/@defaultLayer/@edgeMappings[name='CD_Association']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_DP-AoKw6EeWLasRuU3m_oQ" name="A_legalEntitiesTypeEntitys_legalEntitiesEntitys" sourceNode="_a4XkAKvnEeWLasRuU3m_oQ" targetNode="_O4QysKvoEeWLasRuU3m_oQ" beginLabel="legalEntitiesTypeEntitys[1]" endLabel="legalEntitiesEntitys[*]">
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_DP-AoKw6EeWLasRuU3m_oQ" name="A_legalEntitiesTypeEntity_legalEntitiesEntitys" sourceNode="_a4XkAKvnEeWLasRuU3m_oQ" targetNode="_O4QysKvoEeWLasRuU3m_oQ" beginLabel="null[1]" endLabel="legalEntitiesEntitys[*]">
         <target xmi:type="uml:Association" href="UML-Diagram/sky-biz.uml#_DPth8Kw6EeWLasRuU3m_oQ"/>
         <semanticElements xmi:type="uml:Association" href="UML-Diagram/sky-biz.uml#_DPth8Kw6EeWLasRuU3m_oQ"/>
         <semanticElements xmi:type="uml:Property" href="UML-Diagram/sky-biz.uml#_DPxMUKw6EeWLasRuU3m_oQ"/>
