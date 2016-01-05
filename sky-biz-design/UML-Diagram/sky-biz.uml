@@ -2,50 +2,56 @@
 <uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_ellhgKhWEeWnJ41Osjz3jA" name="Human Capital Management">
   <packagedElement xmi:type="uml:Package" xmi:id="_oNIKEKiDEeWnJ41Osjz3jA" name="Components">
     <packagedElement xmi:type="uml:Component" xmi:id="_AlD8EKh1EeWnJ41Osjz3jA" name="Employee Profile" useCase="_6xldMKhWEeWnJ41Osjz3jA _MT98kKhcEeWnJ41Osjz3jA">
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_l9yuQKiPEeWnJ41Osjz3jA" name="IdentificationTypeEntity">
-        <ownedAttribute xmi:id="_BMjloKiQEeWnJ41Osjz3jA" name="identification_id"/>
-      </nestedClassifier>
+      <packagedElement xmi:type="uml:Package" xmi:id="_1USJMK1HEeWIcIs9ym4MbQ" name="com.sky.biz.hcm.emp">
+        <packagedElement xmi:type="uml:Class" xmi:id="_l9yuQKiPEeWnJ41Osjz3jA" name="IdentificationTypeEntity">
+          <ownedAttribute xmi:id="_BMjloKiQEeWnJ41Osjz3jA" name="identification_id"/>
+        </packagedElement>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Component" xmi:id="_OelIoKjNEeWLasRuU3m_oQ" name="Organization" useCase="_Z5klQKjNEeWLasRuU3m_oQ _dlUeQKjNEeWLasRuU3m_oQ _8gij0KjOEeWLasRuU3m_oQ _B4_2QKjPEeWLasRuU3m_oQ _ZaWnwKjPEeWLasRuU3m_oQ _rIADUKjREeWLasRuU3m_oQ">
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_kTTHQKjPEeWLasRuU3m_oQ" name="JobEntity">
-        <ownedAttribute xmi:id="_t1jgoKjPEeWLasRuU3m_oQ" name="jobName"/>
-        <ownedAttribute xmi:id="_3_iBUKjPEeWLasRuU3m_oQ" name="description"/>
-        <ownedAttribute xmi:id="_6VWCIKjPEeWLasRuU3m_oQ" name="title"/>
-        <ownedAttribute xmi:id="_7n9gkKjPEeWLasRuU3m_oQ" name="maximumPositions"/>
-        <ownedAttribute xmi:id="_MvBIIKjQEeWLasRuU3m_oQ" name="unlimitedPosition"/>
-      </nestedClassifier>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_R4nMwKoQEeWfLfaL-Lic9g" name="JobTypeEntity"/>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_Ts1jcKoQEeWfLfaL-Lic9g" name="JobFunctionEntity"/>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_VS_B4KoQEeWfLfaL-Lic9g" name="JobTaskEntity"/>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_ZoLggKoQEeWfLfaL-Lic9g" name="AreasEntity"/>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_a4Vu0KvnEeWLasRuU3m_oQ" name="LegalEntitiesTypeEntity">
-        <ownedAttribute xmi:id="_qk010KvnEeWLasRuU3m_oQ" name="name" visibility="private"/>
-        <ownedAttribute xmi:id="_3Uat4KvnEeWLasRuU3m_oQ" name="pefixCaption" visibility="private"/>
-        <ownedAttribute xmi:id="_E2tOMKvoEeWLasRuU3m_oQ" name="postfixCaption" visibility="private"/>
-      </nestedClassifier>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_O4PkkKvoEeWLasRuU3m_oQ" name="LegalEntitiesEntity">
-        <ownedAttribute xmi:id="_cWgggKvoEeWLasRuU3m_oQ" name="name" visibility="private"/>
-        <ownedAttribute xmi:id="_r0IFEKvoEeWLasRuU3m_oQ" name="addressLine1" visibility="private"/>
-        <ownedAttribute xmi:id="_vAONoKvoEeWLasRuU3m_oQ" name="addressLine2" visibility="private"/>
-        <ownedAttribute xmi:id="_x2blwKvoEeWLasRuU3m_oQ" name="addressLine3" visibility="private"/>
-        <ownedAttribute xmi:id="_3jbk0KvoEeWLasRuU3m_oQ" name="contractInformation" visibility="private"/>
-        <ownedAttribute xmi:id="_97R3sKvoEeWLasRuU3m_oQ" name="taxRegistration" visibility="private"/>
-        <ownedAttribute xmi:id="_DH6UoKvpEeWLasRuU3m_oQ" name="withholdingTax" visibility="private"/>
-      </nestedClassifier>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_cJlpYKvpEeWLasRuU3m_oQ" name="OrgEntity">
-        <ownedAttribute xmi:id="_gebQwKvrEeWLasRuU3m_oQ" name="code" visibility="private"/>
-        <ownedAttribute xmi:id="_i5iBQKvrEeWLasRuU3m_oQ" name="memo" visibility="private"/>
-        <ownedAttribute xmi:id="_mmn-EKvrEeWLasRuU3m_oQ" name="addressLine1" visibility="private"/>
-        <ownedAttribute xmi:id="_qU0HEKvrEeWLasRuU3m_oQ" name="addressLine2" visibility="private"/>
-        <ownedAttribute xmi:id="_z0DosKvrEeWLasRuU3m_oQ" name="addressLine3" visibility="private"/>
-        <ownedAttribute xmi:id="_teU1sKvrEeWLasRuU3m_oQ" name="purpose" visibility="private"/>
-      </nestedClassifier>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_lEiyMKvpEeWLasRuU3m_oQ" name="OrgTypeEntity">
-        <ownedAttribute xmi:id="_pXHaoKvpEeWLasRuU3m_oQ" name="code" visibility="private"/>
-        <ownedAttribute xmi:id="_srTvQKvpEeWLasRuU3m_oQ" name="name" visibility="private"/>
-      </nestedClassifier>
+      <packagedElement xmi:type="uml:Package" xmi:id="_6Bi_AK1GEeWWsMnLEB3rBw" name="com.sky.biz.hcm.organization">
+        <packagedElement xmi:type="uml:Class" xmi:id="_kTTHQKjPEeWLasRuU3m_oQ" name="JobEntity">
+          <ownedAttribute xmi:id="_t1jgoKjPEeWLasRuU3m_oQ" name="jobName"/>
+          <ownedAttribute xmi:id="_3_iBUKjPEeWLasRuU3m_oQ" name="description"/>
+          <ownedAttribute xmi:id="_6VWCIKjPEeWLasRuU3m_oQ" name="title"/>
+          <ownedAttribute xmi:id="_7n9gkKjPEeWLasRuU3m_oQ" name="maximumPositions"/>
+          <ownedAttribute xmi:id="_MvBIIKjQEeWLasRuU3m_oQ" name="unlimitedPosition"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_R4nMwKoQEeWfLfaL-Lic9g" name="JobTypeEntity"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_Ts1jcKoQEeWfLfaL-Lic9g" name="JobFunctionEntity"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_VS_B4KoQEeWfLfaL-Lic9g" name="JobTaskEntity"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_ZoLggKoQEeWfLfaL-Lic9g" name="AreasEntity"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_a4Vu0KvnEeWLasRuU3m_oQ" name="LegalEntitiesTypeEntity">
+          <ownedAttribute xmi:id="_qk010KvnEeWLasRuU3m_oQ" name="name" visibility="private"/>
+          <ownedAttribute xmi:id="_3Uat4KvnEeWLasRuU3m_oQ" name="pefixCaption" visibility="private"/>
+          <ownedAttribute xmi:id="_E2tOMKvoEeWLasRuU3m_oQ" name="postfixCaption" visibility="private"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_O4PkkKvoEeWLasRuU3m_oQ" name="LegalEntitiesEntity">
+          <ownedAttribute xmi:id="_cWgggKvoEeWLasRuU3m_oQ" name="name" visibility="private"/>
+          <ownedAttribute xmi:id="_r0IFEKvoEeWLasRuU3m_oQ" name="addressLine1" visibility="private"/>
+          <ownedAttribute xmi:id="_vAONoKvoEeWLasRuU3m_oQ" name="addressLine2" visibility="private"/>
+          <ownedAttribute xmi:id="_x2blwKvoEeWLasRuU3m_oQ" name="addressLine3" visibility="private"/>
+          <ownedAttribute xmi:id="_3jbk0KvoEeWLasRuU3m_oQ" name="contractInformation" visibility="private"/>
+          <ownedAttribute xmi:id="_97R3sKvoEeWLasRuU3m_oQ" name="taxRegistration" visibility="private"/>
+          <ownedAttribute xmi:id="_DH6UoKvpEeWLasRuU3m_oQ" name="withholdingTax" visibility="private"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_cJlpYKvpEeWLasRuU3m_oQ" name="OrgEntity">
+          <ownedAttribute xmi:id="_gebQwKvrEeWLasRuU3m_oQ" name="code" visibility="private"/>
+          <ownedAttribute xmi:id="_i5iBQKvrEeWLasRuU3m_oQ" name="memo" visibility="private"/>
+          <ownedAttribute xmi:id="_mmn-EKvrEeWLasRuU3m_oQ" name="addressLine1" visibility="private"/>
+          <ownedAttribute xmi:id="_qU0HEKvrEeWLasRuU3m_oQ" name="addressLine2" visibility="private"/>
+          <ownedAttribute xmi:id="_z0DosKvrEeWLasRuU3m_oQ" name="addressLine3" visibility="private"/>
+          <ownedAttribute xmi:id="_teU1sKvrEeWLasRuU3m_oQ" name="purpose" visibility="private"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_lEiyMKvpEeWLasRuU3m_oQ" name="OrgTypeEntity">
+          <ownedAttribute xmi:id="_pXHaoKvpEeWLasRuU3m_oQ" name="code" visibility="private"/>
+          <ownedAttribute xmi:id="_srTvQKvpEeWLasRuU3m_oQ" name="name" visibility="private"/>
+        </packagedElement>
+      </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Component" xmi:id="_FGOHUKlrEeWfLfaL-Lic9g" name="Recruitment"/>
+    <packagedElement xmi:type="uml:Component" xmi:id="_FGOHUKlrEeWfLfaL-Lic9g" name="Recruitment">
+      <packagedElement xmi:type="uml:Package" xmi:id="_wS1okK1HEeWIcIs9ym4MbQ" name="com.sky.biz.hcm.recruitment"/>
+    </packagedElement>
     <packagedElement xmi:type="uml:Component" xmi:id="_oQYOEKoSEeWfLfaL-Lic9g" name="Completency">
       <packagedElement xmi:type="uml:Package" xmi:id="_avWckKoTEeWfLfaL-Lic9g" name="com.sky.biz.hcm.completency">
         <packagedElement xmi:type="uml:Class" xmi:id="_dufHMKoTEeWfLfaL-Lic9g" name="SkillTypeEntity"/>
