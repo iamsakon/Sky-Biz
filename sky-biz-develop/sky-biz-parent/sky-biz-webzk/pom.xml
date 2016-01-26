@@ -11,10 +11,26 @@
 	<properties>
 		<zk.version>8.0.1</zk.version>
 		<spring.version>3.1.2.RELEASE</spring.version>
-		<!-- <commons-io>2.4</commons-io> -->
+		<commons-io>2.4</commons-io>
 		<!-- <maven.build.timestamp.format>yyyy-MM-dd</maven.build.timestamp.format> -->
 		<!-- <packname>-${project.version}-FL-${maven.build.timestamp}</packname> -->
 	</properties>
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
 	<dependencies>
 		<dependency>
 			<groupId>org.zkoss.zk</groupId>
@@ -27,11 +43,11 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-<!-- 		<dependency> -->
-<!-- 			<groupId>org.zkoss.zk</groupId> -->
-<!-- 			<artifactId>zkmax</artifactId> -->
-<!-- 			<version>${zk.version}</version> -->
-<!-- 		</dependency> -->
+		<!-- <dependency> -->
+		<!-- <groupId>org.zkoss.zk</groupId> -->
+		<!-- <artifactId>zkmax</artifactId> -->
+		<!-- <version>${zk.version}</version> -->
+		<!-- </dependency> -->
 		<dependency>
 			<groupId>org.zkoss.zk</groupId>
 			<artifactId>zuti</artifactId>
@@ -74,6 +90,17 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>${commons-io}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.0.1</version>
+		</dependency>
 	</dependencies>
 
 	<repositories>
@@ -88,4 +115,5 @@
 			<url>http://mavensync.zkoss.org/eval</url>
 		</repository>
 	</repositories>
+	<groupId>com.sky.biz.parent.webzk</groupId>
 </project>
