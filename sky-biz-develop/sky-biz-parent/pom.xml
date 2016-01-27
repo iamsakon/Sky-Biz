@@ -8,6 +8,8 @@
 	<modules>
 		<module>sky-biz-web</module>
 		
+		
+		<module>sky-biz-webzk</module>
 	</modules>
 	<properties>
 		<spring.version>4.0.0.RELEASE</spring.version>
