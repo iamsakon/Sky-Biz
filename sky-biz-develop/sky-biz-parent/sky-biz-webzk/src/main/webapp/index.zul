@@ -2,7 +2,7 @@
 	<window apply="org.zkoss.bind.BindComposer"
 		viewModel="@id('vm')@init('org.sky.biz.webzk.MyViewModel')"
 		validationMessages="@id('vmsgs')">
-		<hlayout>count: <label value="@load(vm.count)" /></hlayout>
+		<hlayout>count2: <label value="@load(vm.count)" /></hlayout>
 		<button label="add" onClick="@command('cmd')"/>
 	</window>
 </zk>

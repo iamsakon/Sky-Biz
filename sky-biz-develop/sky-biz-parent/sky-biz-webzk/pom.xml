@@ -6,9 +6,9 @@
     <groupId>com.sky.biz.parent</groupId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-	<groupId>com.sky.biz.parent</groupId>
+	<groupId>com.sky.biz.parent-web</groupId>
 	<artifactId>sky-biz-webzk</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<properties>
 		<zk.version>8.0.0</zk.version>
 		<commons-io>2.4</commons-io>
