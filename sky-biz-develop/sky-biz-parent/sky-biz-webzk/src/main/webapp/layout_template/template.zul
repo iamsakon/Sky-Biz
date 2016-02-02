@@ -1,4 +1,18 @@
-<vbox>
-  <hbox self="@insert(content)"/>
-  <hbox self="@insert(detail)"/>
-</vbox>
+<zk>
+	<borderlayout hflex="1" vflex="1">
+		<north height="100px" border="none">
+			<include src="/layout_template/banner.zul" />
+		</north>
+		<west width="260px" border="none" collapsible="true"
+			splittable="true" minsize="300">
+			<include src="/layout_template/sidebar.zul" />
+		</west>
+		<center id="mainContent" autoscroll="true" border="none">
+			<hbox self="@insert(content)" />
+		</center>
+		<south height="50px" border="none">
+			<include src="/layout_template/footer.zul" />
+		</south>
+	</borderlayout>
+
+</zk>

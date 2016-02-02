@@ -1,8 +1,8 @@
 <!-- foo/index.zul -->
+<?link rel="stylesheet" type="text/css" href="/style.css"?>
 <?init class="org.zkoss.zk.ui.util.Composition"
 arg0="/layout_template/template.zul"?>
 <zk>
   <window self="@define(content)" title="window1" width="100px"/>
   <window self="@define(content)" title="window2" width="200px"/>
-  <grid self="@define(detail)" width="300px" height="100px"/>
 </zk>
