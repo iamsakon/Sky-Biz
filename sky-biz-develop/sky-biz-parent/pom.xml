@@ -10,6 +10,7 @@
 		
 		
 		<module>sky-biz-webzk</module>
+		<module>sky-biz-webpf</module>
 	</modules>
 	<properties>
 		<spring.version>4.0.0.RELEASE</spring.version>
