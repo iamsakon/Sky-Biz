@@ -10,15 +10,17 @@ import com.swn.eapp.om.dto.OrgTypeDTO;
 @FacesConverter("orgTypeConverter")
 public class OrgTypeConverter implements Converter {
 	public Object getAsObject(FacesContext fc, UIComponent uic, String value) {
-		if (value != null && value.trim().length() > 0) {
+		OrgTypeDTO obj = null;
+		if (value != null && value.trim().length() > 0) {			
 			try {
-				return new OrgTypeDTO();
+				obj = new OrgTypeDTO();
 			} catch (Exception ex) {
-				return null;
+				
 			}
 		} else {
 			return null;
 		}
+		return obj;
 	}
 
 	public String getAsString(FacesContext fc, UIComponent uic, Object object) {
